@@ -1,3 +1,11 @@
+" **** usage ****
+" $ mkdir -p ~.vim/.bundle
+" $ git clone https://github.com/Shougo/neobundle.vim ~/.vim/.bundle/neobundle.vim
+" $ cp .vimrc ~/.vimrc
+" $ cp -r .vim ~/.vim
+" $ vim ~/.vimrc
+" :NeoBundleInstall
+
 " color
 syntax on
 " disp number on the left (setting <C-n> Toggle)
