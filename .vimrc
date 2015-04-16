@@ -102,6 +102,10 @@ NeoBundle 'cohama/agit.vim'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-fugitive'
+" markdown :PrevimOpen でプレビュー
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
 
 call neobundle#end()
 
@@ -145,6 +149,10 @@ autocmd vimenter * if !argc() | NERDTree | endif
 autocmd QuickFixCmdPost *grep* cwindow
 " ステータス行に現在のgitブランチを表示する
 set statusline+=%{fugitive#statusline()}
+
+" .mdのファイルもfiletypeがmarkdownとなるようにする
+au BufRead,BufNewFile *.md set filetype=markdown
+let g:previm_open_cmd = 'open -a Firefox'
 
 " original
 " 挿入モードで改行した時に # を自動挿入しない
