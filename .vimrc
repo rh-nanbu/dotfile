@@ -2,7 +2,6 @@
 " $ mkdir -p ~.vim/.bundle
 " $ git clone https://github.com/Shougo/neobundle.vim ~/.vim/.bundle/neobundle.vim
 " $ cp .vimrc ~/.vimrc
-" $ cp -r .vim ~/.vim
 " $ vim ~/.vimrc
 " :NeoBundleInstall
 
@@ -155,6 +154,8 @@ set statusline+=%{fugitive#statusline()}
 " .mdのファイルもfiletypeがmarkdownとなるようにする
 au BufRead,BufNewFile *.md set filetype=markdown
 let g:previm_open_cmd = 'open -a Firefox'
+" markdownの折りたたみなし
+let g:vim_markdown_folding_disabled=1
 
 " original
 " 挿入モードで改行した時に # を自動挿入しない
