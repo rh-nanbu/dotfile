@@ -1,0 +1,6 @@
+Guardfile
+.rbenv-gemsets
+.rbenv-version
+*.swp
+Gemfile.lock
+spec/spec_helper.rb
